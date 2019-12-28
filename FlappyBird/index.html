@@ -263,8 +263,8 @@ var pushVK = game.newTextObject({
 	text : 'Поделиться рекордом ',
 	positionC : p(width/2, height/2),
 	font : 'myFont',
-	size : 30,
-	color : '#254364'
+	size : 40,
+	color : 'green'
 });
 
 var restart = game.newTextObject({
@@ -272,7 +272,7 @@ var restart = game.newTextObject({
 	positionC : p(width/2, height/3),
 	font : 'myFont',
 	size : 30,
-	color : '#FFFFFF'
+	color : 'Yellow'
 });
 
 game.newLoop('GameOver', function () {
@@ -285,7 +285,7 @@ game.newLoop('GameOver', function () {
 		y : height / 20,
 		text : 'YourScore: ' + score,
 		size : 50,
-		color : 'white',
+		color : 'red',
 		font : 'myFont',
 		align : 'center'
 	});
