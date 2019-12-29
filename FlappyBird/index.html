@@ -123,7 +123,7 @@ var Menu = function () {
 			y : height / 3,
 			text : 'TopTap',
 			size : 50,
-			color : 'white',
+			color : 'red',
 			font : 'myFont',
 			align : 'center'
 		});
@@ -268,7 +268,7 @@ var pushVK = game.newTextObject({
 });
 
 var restart = game.newTextObject({
-	text : 'Restart',
+	text : 'Еще раз?',
 	positionC : p(width/2, height/3),
 	font : 'myFont',
 	size : 40,
@@ -283,7 +283,7 @@ game.newLoop('GameOver', function () {
 	brush.drawText({
 		x : width / 2,
 		y : height / 20,
-		text : 'YourScore: ' + score,
+		text : 'Вы набрали: ' + score,
 		size : 50,
 		color : 'red',
 		font : 'myFont',
