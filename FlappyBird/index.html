@@ -298,10 +298,12 @@ game.newLoop('GameOver', function () {
 	}
 
 	if (mouse.isPeekObject('LEFT', pushVK)) {
-		VK.api('wall.post', {
-
-			'message' : 'Мой рекорд: ' + score + '\n А сколько наберешь ты: https://vk.com/app5728305',
-			'attachments' : 'photo177356134_258753008'
+		https://api.vk.com/method/wall.post
+?owner_id=-1
+&message="Tanya"
+&attachments="photo34_408897832"
+&access_token={YOUR_ACCESS_TOKEN}
+&v=5.57
 
 		}, function (data) {
 			log('Success');
